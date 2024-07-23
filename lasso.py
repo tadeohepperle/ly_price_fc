@@ -17,7 +17,7 @@ import tensorflow.compat.v2.keras as keras
 from datetime import datetime
 from sklearn import linear_model
 from scipy.stats import norm, johnsonsu
-print("import correct")
+
 
 data= pd.read_csv("DE_final.csv", index_col=0)
 data.index = [datetime.strptime(e, '%Y-%m-%d %H:%M:%S%z') for e in data.index]
